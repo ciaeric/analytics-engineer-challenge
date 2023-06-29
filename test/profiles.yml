@@ -1,0 +1,13 @@
+my-bigquery-db:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      keyfile: [path/dbt-test.json]
+      project: [project name]
+      dataset: dbt_test
+      threads: 1
+      timeout_seconds: 300
+      location: US
+      priority: interactive
