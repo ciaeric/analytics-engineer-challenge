@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: sessions
+    description: "Session Level Metrics"
+    columns:
+      - name: session_date
+        description: date of session started
+      - name: device_category
+        description: ....all the names should be described, not going to do in this test

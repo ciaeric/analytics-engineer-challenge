@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: stg_ga_events
+    description: "This tables stages events data grouping by session"

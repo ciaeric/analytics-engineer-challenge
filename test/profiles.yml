@@ -4,9 +4,9 @@ my-bigquery-db:
     dev:
       type: bigquery
       method: service-account
-      keyfile: [path/dbt-test.json]
-      project: [project name]
-      dataset: dbt_test
+      keyfile: ../cred/magnetic-clone-392509-a705448987bd.json
+      project: magnetic-clone-392509
+      dataset: dbttest
       threads: 1
       timeout_seconds: 300
       location: US

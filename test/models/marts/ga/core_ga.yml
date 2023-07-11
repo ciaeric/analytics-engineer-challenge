@@ -1,0 +1,24 @@
+version: 2
+
+models:
+  - name: fct_sessions_with_partition
+    description: "table containing session details, paritioned by session_start_at, free tire not supporting set partition expriation days as NULL, so table will display 0 data"
+    columns:
+      - name: session_id
+        description: Unique Id of session
+        tests:
+          - unique
+          - not_null
+      - name: user_id
+        description: ....all the names should be described, not going to do in this test
+  - name: fct_sessions_no_partition
+    description: "table containing session details"
+    columns:
+      - name: session_id
+        description: Unique Id of session
+        tests:
+          - unique
+          - not_null
+      - name: user_id
+        description: ....all the names should be described, not going to do in this test
+          
